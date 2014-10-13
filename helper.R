@@ -1,5 +1,5 @@
 # Set WD
-setwd("C:/Users/BrewJR/Documents/fakepaper")
+#setwd("C:/Users/BrewJR/Documents/fakepaper")
 
 # Set seed
 set.seed(sample(1:10000, 1))
