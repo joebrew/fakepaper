@@ -24,22 +24,6 @@ shinyServer(function(input, output) {
                     contentType = "application/pdf"
   )
   
-  output$downloadHTML <-
-    downloadHandler(filename = "report.html",
-                    content = function(file){
-                      # generate HTML
-                      knit2html("report.Rmd")
-                      
-                      # copy html to 'file'
-                      file.copy("report.html", file)
-                      
-                      # delete generated files
-                      file.remove("report.html", "report.md")
 
-                      # delete folder with plots
-                      unlink("figure", recursive = TRUE)
-                    },
-                    contentType = "text/html"
-  )
   
 })
