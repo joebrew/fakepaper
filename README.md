@@ -1,6 +1,6 @@
-## report
+## The letterator!
 
-This simple Shiny app demonstrates how to generate a PDF or HTML report through Shiny.
+This app generates fake letters to the editor, for the purpose of confusing people and wasting time.  
 
 The app is here:
-	http://glimmer.rstudio.com/brechtdv/report/
+	joebrew.shinyapps.io/letterator
