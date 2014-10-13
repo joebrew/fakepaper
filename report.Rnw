@@ -1,0 +1,43 @@
+\documentclass[17pt]{extarticle}
+%\documentclass[17pt]{article}
+%\documentclass[14pt]{extreport}
+\pagestyle {empty}
+
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+
+%\title{\Sexpr{input$letter_title}}
+%\maketitle
+
+\begin{center}
+\begin{large}
+\Sexpr{input$letter_title}
+\end{large}
+\end{center}
+
+<<echo = FALSE>>=
+x <- GeneratePaper(title = input$title,
+              author = input$author,
+              to = input$to,
+              sentiment = input$sentiment,
+              journal = input$journal)
+
+
+@
+
+\noindent \Sexpr{x[[1]]} \\
+
+\Sexpr{x[[2]]}   \Sexpr{x[[3]]} \\
+
+\Sexpr{x[[4]]} \\
+
+\Sexpr{x[[5]]} \\
+
+Sincerely, \\
+
+\Sexpr{input$letter_writer} (\Sexpr{input$writer_position})
+
+
+
+
+\end{document}
