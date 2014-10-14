@@ -1,4 +1,5 @@
 library(shiny)
+library(knitr)
 
 # Define server
 shinyServer(function(input, output) {
