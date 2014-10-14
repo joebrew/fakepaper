@@ -63,7 +63,7 @@ shinyUI(pageWithSidebar(
       textInput("journal","Journal",
                 "Northern Alachua County Journal of Epidemiology and Drag Racing"),
       textInput("letter_writer","Author of the letter",
-                "Diana Rojas")),
+                "Jacob Ball")),
 #       textInput("writer_position", "Description of letter writer",
 #                 "Investigadora extraordinaria")),
     downloadButton("downloadPDF", "Download your letter!")

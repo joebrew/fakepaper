@@ -5,7 +5,7 @@
 set.seed(sample(1:10000, 1))
 
 # Read in cleaned up words and part of speech / sentiment
-words <- read.csv("harvard/joe_words.csv")
+words <- read.csv("joe_words.csv")
 words$word <- tolower(words$word)
 
 # Put everything into lowercase

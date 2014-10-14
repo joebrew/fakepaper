@@ -1,3 +1,4 @@
+library(shiny)
 
 # Define server
 shinyServer(function(input, output) {
@@ -9,7 +10,7 @@ shinyServer(function(input, output) {
   set.seed(sample(1:10000, 1))
   
   # Read in cleaned up words and part of speech / sentiment
-  words <- read.csv("harvard/joe_words.csv")
+  words <- read.csv("joe_words.csv")
   words$word <- tolower(words$word)
   
   # Put everything into lowercase
@@ -128,7 +129,7 @@ shinyServer(function(input, output) {
     l3negb <- paste0("In my many years of reading ",
                      journal, 
                      ", this is the first time I've found myself so ",
-                     joe("adjective", "negative", reg = "*ed"),
+                     joe("adjective", "negative", reg = "*ed", neg_reg = "ly"),
                      " by an article that I felt compelled to write.")
     l3negc <- paste0("Even by the standards of ",
                      journal,
