@@ -8,7 +8,7 @@ shinyUI(pageWithSidebar(
   headerPanel("The letterator!"),
   
   ## Sidebar panel
-  sidebarPanel("The letterator automatically generates a epidemiology-related letter to the editor.",
+  sidebarPanel("The letterator automatically generates an epidemiology-related letter to the editor.",
                br(),
                br(),
                "This app is based on the",
@@ -23,7 +23,7 @@ shinyUI(pageWithSidebar(
                br(),
                "Try it out, and if the first go doesn't generate that perfect paper, fear not -",
                "you've got infinity on your side.",
-               "Just try again (and again, and again), and eventually you'll get that perfect (publishable) letter, guarnteed.",
+               "Just try again (and again, and again), and eventually you'll get published, guaranteed.",
                br(),
                br(),
                
